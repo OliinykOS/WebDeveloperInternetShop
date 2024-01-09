@@ -1,0 +1,409 @@
+body {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: rgb(255, 207, 0);
+}
+
+.brand-logo img {
+    max-width: 100px;
+    margin: 5px;
+}
+
+nav ul a {
+    color: black;
+}
+
+.title{
+    color: rgb(255,255,255);
+    background: rgb(0,109,183);
+    padding: 20px;
+}
+
+.title h1 {
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
+}
+
+.page-footer {
+    color: rgb (255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+/*----Lesson 3 Card-----*/
+.card-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 250px;
+    border: 1px solid #eaeaea;
+    padding: 12px;
+}
+
+.card-wrap img{
+    display: block;
+    width: 100%;
+    transition: all 1s ease-out;
+}
+
+.card-wrap img:hover{
+    transform: scale(1.1);
+}
+
+.card-wrap h2 {
+    font-size: 24px;
+}
+
+.card-wrap h2:hover {
+    color: rgb(0, 109, 183);
+}
+
+.card-wrap span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.button-buy {
+    border: 1px solid rgb(253, 128, 36);
+    background-color: rgb(253, 128, 36);
+    padding: 12px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.button-buy:hover {
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    gap: 10px;
+}
+
+/*-----Lesson 4 -------*/
+
+.item-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+    text-align: center;
+    
+}
+
+.item-slider-conteiner{
+    width: 40%;
+    padding: 30px;
+}
+
+.item-description{
+    width: 30%;
+    padding: 30px;
+    background-color: rgb(238, 238, 238);
+}
+
+.item-slider-conteiner .slick-prev::before, .item-slider-conteiner .slick-next::before{
+    color: red;
+    font-size: 36px;
+}
+
+.item-slider-conteiner .slick-prev{
+    left: -50px;
+}
+
+.item-slider-conteiner .slick-next{
+    right: -40px;
+}
+
+.item-description span{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.item-description .button-buy{
+    max-width: 200px;
+    margin: 30px auto;
+
+}
+
+.item-new{
+    color: #000;
+    width: 50px;
+    font-size: 20px;
+    padding: 5px;
+    background-color: rgb(255, 207, 0);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*------------Lesson 5------------------------*/
+
+.collapsible-header{
+    font-size: 18px;
+    line-height: 2rem;
+}
+
+.collapsible li .material-icons{
+    font-size: 2rem;
+}
+
+.collapsible li:nth-child(1) .material-icons{
+    color: #26a69a
+}
+
+.collapsible li:nth-child(2) .material-icons{
+    color: red
+}
+
+.collapsible li:nth-child(3) .material-icons{
+    color: rgb(255, 140, 0)
+}
+
+iframe{
+    display: block;
+    margin: 0 auto;
+}
+
+/*-----Lesson 6------*/
+
+.contacts-row{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.contacts-img{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.contacts-info{
+    min-width: 380px;
+    width: 30%;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 5%;
+    background-color: beige;
+    color: rgb(255,255,255);
+    background: rgb(0, 109, 183);
+    box-shadow: 0px 0px 34px -5px rgba(0, 26, 255, 1);
+}
+
+.contacts-title{
+    text-align: center;
+    margin: 0 0 25px 0;
+}
+
+.contacts-phone i, .contacts-phone span, .contacts-phone a{
+    margin-right: 10px;
+    font-size: 20px;
+    line-height: 20px;
+    color: rgb(255, 207, 0);
+}
+
+.contacts-phone a{
+    color: white;
+}
+
+.contacts-map{
+    width: 50%;
+    margin: 20px;
+}
+
+/*-----Lesson 7-------*/
+.contacts-form-container{
+    background: url(../img/form_background.jpg);
+    background-size: cover;
+    padding: 10px 60px 60px 60px;
+    height: 800px;
+
+}
+
+.contacts-form-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contacts-form-container i{
+    color: rgb(0, 109, 183);
+}
+
+.contacts-form-container .btn{
+    background-color: rgb(0, 109, 183);
+}
+
+.contacts-form-container .btn:hover{
+    background-color: rgb(0, 109, 183);
+    opacity: 0.8;
+}
+
+.social{
+    display: flex;
+}
+
+.social li{
+    margin-right: 10px;
+}
+
+.social li a{
+    font-size: 0;
+    display: inline-block;
+    width: 52px;
+    height: 56px;
+    background-image: url(../img/social-icons.svg);
+    background-repeat: no-repeat;
+    background-size: 264px 174px;
+    
+}
+
+.social-1{
+    background-position: -52px -0px;
+}
+
+.social-1:hover{
+    opacity: 0.6;
+}
+
+.social-2{
+    background-position: -52px -118px;
+}
+
+.social-2:hover{
+    opacity: 0.6;
+}
+
+/*-----Lesson 8---------*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+/*----Lesson 10-------*/
+
+#cart{
+    padding: 0, 15px;
+}
+
+#cart li {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#cart li img{
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.delete-item{
+    margin-left: 10px;
+    padding: 4px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.cart-btn{
+    position: absolute;
+    top: 5px;
+    right: 150px;
+    background-color: rgb(0, 109, 183);
+}
+
+.cart-btn i{
+    background: rgb(0, 109, 183);
+}
+
+#ajax-contact-form{
+    max-width: 250px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.cart-input{
+    display: none;
+    color: red;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+.addImgBtn{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border: 4px solid blue;
+    border-radius: 8px;
+    margin: 30px auto;
+    padding: 5px;
+    text-align: center;
+}
+
+.fa-solid{
+    color: blue;
+    font-size: 30px;
+}
+
+
+@media screen and (max-width: 1000px){
+
+    .column {
+        flex: 50%;
+        max-width: 50%;
+        padding: 0 4px;
+    }
+
+    .contacts-img{
+        display: none;
+    }
+
+    .contacts-map{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .column {
+        flex: 100%;
+        max-width: 100%;
+        padding: 0 4px;
+    }
+
+    .contacts-row{
+        flex-direction: column;
+    }
+
+}

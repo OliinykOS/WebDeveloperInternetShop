@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Kalessin Shop</title>
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    
+    <!--Slick styles Lesson 2-->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <!--Add the new slick-theme.css if you want the default styling-->
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+    <!--My styles-->
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection"/>
+
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo right">
+            <!--Logo Lesson 2-->
+            <img src="img/Lego-Logo-PNG.png" alt="logo">
+          </a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a class="active" href="index.html">Головна</a></li>
+            <li><a href="catalog.html">Каталог товарів</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+            <li><a href="company.html">Про компанію</a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="title">
+        <h1>Інтернет магазин Lego Shop</h1>
+    </div>
+
+    <!--Slick slider Lesson 2-->
+    <div class="header-slider">
+        <div class="slide"><img src="img/42154_alt2.jpg" alt=""></div>
+        <div class="slide"><img src="img/42156_alt2.jpg" alt=""></div>
+        <div class="slide"><img src="img/42162_alt2.jpg" alt=""></div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Інтернет магазин LEGO Shop</h5>
+              <p class="grey-text text-lighten-4">Будь першим хто дізнається про нові набори, ексклюзивні продукти, акції та події в нашому LEGO Shop</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Сторінки</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="index.html">Головна</a></li>
+                <li><a class="grey-text text-lighten-3" href="catalog.html">Каталог товарів</a></li>
+                <li><a class="grey-text text-lighten-3" href="contacts.html">Контакти</a></li>
+                <li><a class="grey-text text-lighten-3" href="company.html">Про компанію</a></li>
+                <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Кошик</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-copyright">
+          <div class="container">
+          © 2023 Copyright by Kalessin
+          <a class="grey-text text-lighten-4 right" href="#!">Доставка та оплата</a>
+          </div>
+        </div>
+    </footer>
+
+
+    <!--Slick scripts Lesson 2-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.header-slider').slick({
+                autoplay: true,
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+
+            });
+        });
+    </script>
+
+
+</body>
+</html>
